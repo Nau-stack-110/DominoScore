@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>DominoScore</title>
+</head>
+<body>
+  <div class="wrapper" id="wrapper1">
+        <header>
+            <h1>Score Dominos</h1>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#home1" onclick="redirecthome()">Home</a>
+                    <a href="#home-about" onclick="redirectabout()">About</a>
+                    <a href="#">Share app</a>
+                </div>
+            </div>
+            <i class="fa fa-bars" onclick="openNav()"></i>
+        </header>
+        <div class="home" id="home1">    
+            <h3 style="color:#dbc714;margin-bottom:15px;">  Bienvenue dans notre applications Favoris</h3>
+            <h4>With this app, You can take scores, No need to calculate it!😂</h4>
+            <div class="player">
+                <div class="pla open" onclick="ioo()">
+                   Three Players
+                </div>
+                <div class="pla open" onclick="io()">
+                   Two Players
+                </div>
+            </div>
+        </div>
+        <div class="home-about" id="home-about">
+            <div class="header-about">
+                <h1 style="color: #dbc714;"> ABOUT DominoScore </h1>
+            </div>
+            <body-about>
+                <h3>Version : 1.0.0</h3>
+                <h2 style="color: #dbc714;">
+                    <script>
+                        document.write(new Date().getFullYear()); 
+                    </script>
+                </h2>
+                <p>&copy by Naunau </p>
+                <a href="#">andriatahianaarnaud110@gmail.com</a>
+                <div class="stars" style="margin-top: 10px;">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="social">
+                    <a href="#"  class="social-icon facebook"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"  class="social-icon github" ><i class="fa fa-github"></i></a>
+                    <a href="#"  class="social-icon linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </body-about>
+        </div>
+        <footer>
+            <hr>
+            <p>App created by &copy 💙  <a href="#">Naunau</a></p>
+        </footer>
+
+        <!-- =================================== -->
+        <div class=" wrapper2">
+            <div class="containera">
+                <header>
+                    <span>YOU CAN EDIT All PlAYERS!</span>
+                    <span class="close"><i class="fa fa-times"></i></span>
+                </header>
+                <div class="content">
+                    <p>Please Enter a Valid Name if possible :</p>
+                    <span class="letter"><span class="btn">A</span>
+                    <input type="text" placeholder="A" id="inputA" maxlength="10" /></span>
+                    <span class="letter"><span class="btn">B</span>
+                    <input type="text" placeholder="B" id="inputB" maxlength="10" value="" /></span>
+                    <span class="letter tsyaseho"><span class="btn">C</span>
+                    <input type="text" placeholder="C" id="inputC" maxlength="10" value="" /></span>
+                    <div class="go">
+                        Let's Go!
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <!-- ================================================= -->
+
+    <!-- ======================= -->
+    <div class=" wrapper wrapper3" id="wrapper3">
+        <div class="victoire">
+            <p> <span class="victory">You </span> won the game !</span></p>
+            <button class="btnokay1" onclick="fermeo()">Back to menu!</button>
+        </div> 
+        <header>
+            <i class="fa fa-arrow-left" onclick="redirectohome()"></i>   
+            <h1 style="position:absolute; right:10px;">Score Dominos</h1>       
+        </header>
+
+        <div class="home" id="home2">
+            <table class="center">    
+                <tr>
+                    <th id="motA"style="color:orange;" >A</th>
+                    <th id="motB"style="color:orange;" >B</th>
+                    <th id="motC"style="color:orange;" >C</th>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA1" name="inputA1" class="inputField" data-target="checkA1" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA1" onclick="validerInput('inputA1')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA2" name="inputA2" class="inputField" data-target="checkA2" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA2" onclick="validerInput('inputA2')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA3" name="inputA3" class="inputField" data-target="checkA3" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA3" onclick="validerInput('inputA3')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA4" name="inputA4" class="inputField" data-target="checkA4" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA4" onclick="validerInput('inputA4')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA5" name="inputA5" class="inputField" data-target="checkA5" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA5" onclick="validerInput('inputA5')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA6" name="inputA6" class="inputField" data-target="checkA6" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA6" onclick="validerInput('inputA6')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA7" name="inputA7" class="inputField" data-target="checkA7" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA7" onclick="validerInput('inputA7')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA8" name="inputA8" class="inputField" data-target="checkA8" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA8" onclick="validerInput('inputA8')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA9" name="inputA9" class="inputField" data-target="checkA9" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA9" onclick="validerInput('inputA9')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA10" name="inputA10" class="inputField" data-target="checkA10" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA10" onclick="validerInput('inputA10')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA11" name="inputA11" class="inputField" data-target="checkA11" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA11" onclick="validerInput('inputA11')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA12" name="inputA12" class="inputField" data-target="checkA12" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA12" onclick="validerInput('inputA12')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA13" name="inputA13" class="inputField" data-target="checkA13" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA13" onclick="validerInput('inputA13')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA14" name="inputA14" class="inputField" data-target="checkA14" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA14" onclick="validerInput('inputA14')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA15" name="inputA15" class="inputField" data-target="checkA15" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA15" onclick="validerInput('inputA15')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA16" name="inputA16" class="inputField" data-target="checkA16" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA16" onclick="validerInput('inputA16')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA17" name="inputA17" class="inputField" data-target="checkA17" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA17" onclick="validerInput('inputA17')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA18" name="inputA18" class="inputField" data-target="checkA18" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA18" onclick="validerInput('inputA18')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA19" name="inputA19" class="inputField" data-target="checkA19" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA19" onclick="validerInput('inputA19')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA20" name="inputA20" class="inputField" data-target="checkA20" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA20" onclick="validerInput('inputA20')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA21" name="inputA21" class="inputField" data-target="checkA21" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA21" onclick="validerInput('inputA21')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA22" name="inputA22" class="inputField" data-target="checkA22" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA22" onclick="validerInput('inputA22')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA23" name="inputA23" class="inputField" data-target="checkA23" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA23" onclick="validerInput('inputA23')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA24" name="inputA24" class="inputField" data-target="checkA24" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA24" onclick="validerInput('inputA24')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA25" name="inputA25" class="inputField" data-target="checkA25" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA25" onclick="validerInput('inputA25')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA26" name="inputA26" class="inputField" data-target="checkA26" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA26" onclick="validerInput('inputA26')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA27" name="inputA27" class="inputField" data-target="checkA27" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA27" onclick="validerInput('inputA27')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA28" name="inputA28" class="inputField" data-target="checkA28" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA28" onclick="validerInput('inputA28')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA29" name="inputA29" class="inputField" data-target="checkA29" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA29" onclick="validerInput('inputA29')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA30" name="inputA30" class="inputField" data-target="checkA30" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA30" onclick="validerInput('inputA30')"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id="col1">
+                        <input type="number" id="inputA31" name="inputA31" class="inputField" data-target="checkA31" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA31" onclick="validerInput('inputA31')"></i>
+                    </td>
+                    <td id="col2">
+                        <input type="number" id="inputA32" name="inputA32" class="inputField" data-target="checkA32" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA32" onclick="validerInput('inputA32')"></i>
+                    </td>
+                    <td id="col3">
+                        <input type="number" id="inputA33" name="inputA33" class="inputField" data-target="checkA33" maxlength="10" value="" />
+                        <i class="fa fa-check checkIcon" id="checkA33" onclick="validerInput('inputA33')"></i>
+                    </td>
+                </tr>              
+            </table>
+
+            <div class="pluss">
+                <i class="fa fa-plus"></i>
+            </div>
+
+            <table border="1" class="tabla">
+                <tr>
+                    <th colspan="3" width="100%">Global score</th>
+                </tr>
+                <tr>
+                    <td id="totalScore">Total:</td>
+                    <td id="totalScore1">Total:</td>
+                    <td id="totalScore2">Total:</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
